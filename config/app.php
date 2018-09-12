@@ -7,10 +7,9 @@ return [
     | 应用名称
     |--------------------------------------------------------------------------
     |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
-    |
+    | 此值是应用程序的名称。
+    | 当框架需要将应用程序的名称放置在应用程序或其包所需的其他位置的通知中时，
+    | 将使用此值。
     */
 
     'name' => env('APP_NAME', 'Laravel'),
@@ -20,9 +19,9 @@ return [
     | 应用环境
     |--------------------------------------------------------------------------
     |
-    | This value determines the "environment" your application is currently
-    | running in. This may determine how you prefer to configure various
-    | services the application utilizes. Set this in your ".env" file.
+    | 此值确定应用程序当前运行的“环境”。
+    | 这可能决定您希望如何配置应用程序使用的各种服务。
+    | 在“.env”文件中设置此项。
     |
     */
 
@@ -30,12 +29,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Debug Mode
+    | 应用程序调试模式
     |--------------------------------------------------------------------------
     |
-    | When your application is in debug mode, detailed error messages with
-    | stack traces will be shown on every error that occurs within your
-    | application. If disabled, a simple generic error page is shown.
+    | 当您的应用程序处于调试模式时，
+    | 带有堆栈跟踪的详细错误消息将显示在应用程序中发生的每个错误上。
+    | 如果禁用，则会显示一个简单的通用错误页面。
     |
     */
 
@@ -43,12 +42,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application URL
+    | 应用程序 URL
     |--------------------------------------------------------------------------
     |
-    | This URL is used by the console to properly generate URLs when using
-    | the Artisan command line tool. You should set this to the root of
-    | your application so that it is used when running Artisan tasks.
+    | 使用Artisan命令行工具时，控制台使用此URL来正确生成URL。
+    | 您应该将其设置为应用程序的根目录，以便在运行Artisan任务时使用它。
     |
     */
 
@@ -56,12 +54,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Timezone
+    | 应用程序时区
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the default timezone for your application, which
-    | will be used by the PHP date and date-time functions. We have gone
-    | ahead and set this to a sensible default for you out of the box.
+    | 在这里，您可以指定应用程序的默认时区，它将由PHP日期和日期时间函数使用。
+    | 我们已经开始为您提供开箱即用的明智默认设置。
     |
     */
 
@@ -69,25 +66,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
+    | 应用程序区域设置配置
     |--------------------------------------------------------------------------
     |
-    | The application locale determines the default locale that will be used
-    | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
+    | 应用程序区域设置确定将由翻译服务提供程序使用的默认区域设置。
+    | 您可以自由地将此值设置为应用程序将支持的任何语言环境。
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------
-    | Application Fallback Locale
+    | 应用程序后备区域设置
     |--------------------------------------------------------------------------
     |
-    | The fallback locale determines the locale to use when the current one
-    | is not available. You may change the value to correspond to any of
-    | the language folders that are provided through your application.
+    | 后备区域设置确定当前区域设置不可用时使用的区域设置。
+    | 您可以更改该值以对应于通过您的应用程序提供的任何语言文件夹。
     |
     */
 
@@ -95,12 +90,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Encryption Key
+    | 加密密钥
     |--------------------------------------------------------------------------
     |
-    | This key is used by the Illuminate encrypter service and should be set
-    | to a random, 32 character string, otherwise these encrypted strings
-    | will not be safe. Please do this before deploying an application!
+    | 此密钥由Illuminate encrypter服务使用，
+    | 应设置为随机的32个字符的字符串，否则这些加密的字符串将不安全。
+    | 请在部署应用程序之前执行此操作！
     |
     */
 
@@ -110,19 +105,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Autoloaded Service Providers
+    | Autoloaded Service Providers 自动加载的服务提供商
     |--------------------------------------------------------------------------
     |
-    | The service providers listed here will be automatically loaded on the
-    | request to your application. Feel free to add your own services to
-    | this array to grant expanded functionality to your applications.
+    | 此处列出的服务提供商将自动加载到您的应用程序的请求中。
+    | 您可以随意将自己的服务添加到此阵列，以便为您的应用程序授予扩展功能。
     |
     */
 
     'providers' => [
 
         /*
-         * Laravel Framework Service Providers...
+         * Laravel Framework 服务供应商...
          */
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -148,11 +142,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
+         * Package 服务供应商...
          */
 
         /*
-         * Application Service Providers...
+         * Application 服务供应商...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
@@ -164,7 +158,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Class Aliases
+    | Class Aliases   类别名
     |--------------------------------------------------------------------------
     |
     | This array of class aliases will be registered when this application
