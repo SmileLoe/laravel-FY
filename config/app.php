@@ -161,9 +161,8 @@ return [
     | Class Aliases   类别名
     |--------------------------------------------------------------------------
     |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
+    | 启动此应用程序时，将注册此类别名数组。
+    | 但是，可以随意注册任意多个，因为别名是“懒惰”加载的，因此它们不会妨碍性能。
     |
     */
 

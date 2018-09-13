@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Database Connection Name
+    | 默认数据库连接名称
     |--------------------------------------------------------------------------
     |
     | Here you may specify which of the database connections below you wish
@@ -17,7 +17,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Database Connections
+    | 数据库连接
     |--------------------------------------------------------------------------
     |
     | Here are each of the database connections setup for your application.
