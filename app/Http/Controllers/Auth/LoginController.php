@@ -9,31 +9,33 @@ class LoginController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
-    | Login Controller
+    | 登录控制器
     |--------------------------------------------------------------------------
     |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
+    | 此控制器处理应用程序的用户身份验证并将其重定向到主屏幕。
+    | 控制器使用特征来方便地为您的应用程序提供其功能。
     |
     */
 
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
+     * 用户登录后重定向到哪里
      *
      * @var string
      */
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
+     * 创建一个新的控制器实例
      *
      * @return void
      */
     public function __construct()
     {
+        /**
+         * 执行中间件 guest 但是除了 logout 方法
+         */
         $this->middleware('guest')->except('logout');
     }
 }
