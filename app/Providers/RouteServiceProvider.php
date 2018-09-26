@@ -17,19 +17,20 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
-     * Define your route model bindings, pattern filters, etc.
+     * 定义路径模型绑定，模式过滤器等。
      *
      * @return void
      */
     public function boot()
     {
-        //
-
+        //全局约束
+        Route::pattern("id",'[0-9]+'); //定义id只能为数字
+        Route::pattern('name', '[A-Za-z]+');//定义name为字符
         parent::boot();
     }
 
     /**
-     * Define the routes for the application.
+     * 定义应用程序的路由。
      *
      * @return void
      */
@@ -43,9 +44,9 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Define the "web" routes for the application.
+     * 定义应用程序的“Web”路由。
      *
-     * These routes all receive session state, CSRF protection, etc.
+     * 这些路由都接收会话状态，CSRF保护等。
      *
      * @return void
      */
@@ -57,9 +58,9 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Define the "api" routes for the application.
+     * 为应用程序定义“api”路由。
      *
-     * These routes are typically stateless.
+     * 这些路由组通常是无状态的。
      *
      * @return void
      */

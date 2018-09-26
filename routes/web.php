@@ -12,11 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',['website'=>'laravel']);
 });
 
-Route::get('hello',function (){
-    return "你好，欢迎！您输入的hello为路由控制哟！";
-});
+Route::view('view','welcome',['website'=>'laravel学习']);
 
-Route::get('/user', 'UsersController@index');
+
+Route::get('user/{id}','UserController@show');
+
+
+
+
+//路由重定向 其中 here 表示原路由，there 表示重定向之后的路由，301 是一个 HTTP 状态码，用于标识重定向。
+Route::redirect('/here', '/there', 301);
+

@@ -116,7 +116,11 @@ return [
     'providers' => [
 
         /*
-         * Laravel Framework 服务供应商...
+         * Laravel框架服务提供器...
+         * 应用程序的所有服务提供器都在 config/app.php 配置文件的 providers 数组中配置。
+         *
+         * 首先，所有提供器都会调用 register 方法，
+         * 接着，由 boot 方法负责调用所有被注册提供器。
          */
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
